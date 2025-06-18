@@ -1,0 +1,4 @@
+evdev
+pyaudio
+nemo_toolkit["asr"]
+cuda-python
