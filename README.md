@@ -44,6 +44,6 @@ sudo python3 main.py
 
 ## Notes
 
-- This tool is intended for Wayland users, as `evdev` is the only reliable way to monitor keyboard events in this environment.
+- This tool is intended for Wayland users, as `evdev` is the only reliable way to monitor keyboard events for Wayland applications.
 - Make sure your microphone is set up and accessible.
 - The script will create a virtual keyboard device to type the recognized text.
