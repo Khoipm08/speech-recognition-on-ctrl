@@ -10,7 +10,7 @@ This project enables speech-to-text transcription and automatic keyboard input b
 
 ## Requirements
 
-- Python 3.8+
+- Python 3.10+
 - A supported NVIDIA GPU (for NeMo ASR)
 - Wayland session (X11 may work, but there are more cleaner and easier ways to implement this feature for it so DIY=])
 - `sudo` privileges (required for evdev access)
@@ -47,3 +47,4 @@ sudo python3 main.py
 - This tool is intended for Wayland users, as `evdev` is the only reliable way to monitor keyboard events for Wayland applications.
 - Make sure your microphone is set up and accessible.
 - The script will create a virtual keyboard device to type the recognized text.
+- The model is stored in /root/.cache/huggingface folder
