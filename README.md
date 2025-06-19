@@ -5,7 +5,7 @@ This project enables speech-to-text transcription and automatic keyboard input b
 ## Features
 
 - Record audio by holding Left or Right Ctrl.
-- Transcribe speech using NVIDIA NeMo ASR models.
+- Transcribe speech using NVIDIA NeMo Parakeet ASR models (parakeet-tdt-0.6b-v2).
 - Automatically type the recognized text as keyboard input.
 
 ## Requirements
