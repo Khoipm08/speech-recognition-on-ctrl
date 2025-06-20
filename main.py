@@ -75,7 +75,7 @@ def find_keyboard():
 
 keyboard = find_keyboard()
 
-print("Press and hold Left or Right Ctrl to record. ESC to exit.")
+print("Press and hold Right Ctrl to record. ESC to exit.")
 
 def press_key(uinput, key_code):
     uinput.write(ecodes.EV_KEY, key_code, 1) # Key down
@@ -121,8 +121,8 @@ try:
     for event in keyboard.read_loop():
         if event.type == ecodes.EV_KEY:
             key_event = categorize(event)
-            # Left Ctrl: KEY_LEFTCTRL, Right Ctrl: KEY_RIGHTCTRL
-            if key_event.scancode in (ecodes.KEY_LEFTCTRL, ecodes.KEY_RIGHTCTRL):
+            # Right Ctrl: KEY_RIGHTCTRL
+            if key_event.scancode == ecodes.KEY_RIGHTCTRL:
                 if key_event.keystate == KeyEvent.key_down and not recording:
                     recording = True
                     recording_thread = threading.Thread(target=record)

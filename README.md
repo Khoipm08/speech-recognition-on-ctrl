@@ -4,9 +4,9 @@ This project enables speech-to-text transcription and automatic keyboard input b
 
 ## Features
 
-- Record audio by holding Left or Right Ctrl.
+- Record audio by holding or Right Ctrl.
 - Transcribe speech using NVIDIA NeMo Parakeet ASR models (parakeet-tdt-0.6b-v2).
-- Automatically type the recognized text as keyboard input.
+- Automatically type the recognized text wherever your cursor is.
 
 ## Requirements
 
@@ -38,7 +38,7 @@ This project enables speech-to-text transcription and automatic keyboard input b
 sudo python3 main.py
 ```
 
-- **Hold Left or Right Ctrl** to start recording.
+- **Hold Right Ctrl** to start recording.
 - **Release Ctrl** to stop recording and transcribe.
 - **Press ESC** to exit.
 
